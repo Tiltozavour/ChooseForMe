@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LWver2.Page1"
+             BackgroundImageSource="BackDark.png"
+             >
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Spacing="4"  Margin="10,0,10,0">
+
+            <Frame x:Name="page1Frame1"        
+                   BackgroundColor="#805F9A" 
+                   VerticalOptions="Start"
+                   Padding="0" 
+                   Margin="0,0,0,0"
+                   CornerRadius="10">
+                <Button x:Name="BreakfastFirstButton"
+                        Text="Завтрак" 
+                        Clicked="BreakfastFirstButton_Clicked" 
+                        Background="#D7A7C7"
+                        TextColor="#2D2167"/>
+            </Frame>
+            <Frame x:Name="page1Frame2"
+                   BackgroundColor="#5c4fb3"
+                   VerticalOptions="Start" 
+                   Padding="0" 
+                   Margin="0,10,0,0"
+                   CornerRadius="10">
+                <Button x:Name="LunchFirstButton" 
+                        Text="Обед" 
+                        Clicked="LunchFirstButton_Clicked" 
+                        Background="#897ED9" 
+                        TextColor="#2D2167"/>
+            </Frame>
+            <Frame x:Name="page1Frame3" 
+                   BackgroundColor="#805F9A"
+                   VerticalOptions="Center" 
+                   Margin="0,10,0,0"
+                   Padding="0" 
+                   CornerRadius="10">
+                <Button x:Name="DinnerFistButton" 
+                        Text="Ужин" 
+                        Clicked="DinnerFistButton_Clicked" 
+                        Background="#D7A7C7" 
+                        TextColor="#2D2167"/>
+            </Frame>
+            <Frame x:Name="page1Frame4"
+                   BackgroundColor="#5c4fb3" 
+                   VerticalOptions="End" 
+                   Margin="0,10,0,0"
+                   Padding="0" 
+                   CornerRadius="10">
+                <Button x:Name="SnacksFirstButton"
+                        Text="Перекусить" 
+                        Clicked="SnacksFirstButton_Clicked" 
+                        Background="#897ED9"
+                        TextColor="#2D2167"/>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

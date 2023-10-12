@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LWver2.Page2"
+             BackgroundImageSource="BackDark.png">
+
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" > 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"  />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        
+        <!--Breakfast -->
+
+        <StackLayout x:Name="ChooseBreakfastOne"
+                     Grid.Column="0" 
+                     Grid.Row="1"
+                     Padding="0" 
+                     IsVisible="false" 
+                     VerticalOptions="CenterAndExpand"
+                     Margin="15,0,0,0">
+            <Frame  BackgroundColor="#D7A7C7" CornerRadius="8">
+                <StackLayout>
+                    <Label x:Name="BreakfastChooseOne" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseBreakfastTwo"
+                     Grid.Column="0" 
+                     Grid.Row="2" 
+                     Padding="0" 
+                     IsVisible="false"
+                     Margin="15,0,0,0"
+                     VerticalOptions="CenterAndExpand">
+            <Frame  BackgroundColor="#D7A7C7" CornerRadius="8" >
+                <StackLayout>
+                    <Label x:Name="BreakfastChooseTwo" 
+                           FontSize="Large" 
+                           HorizontalOptions="Center" 
+                           HorizontalTextAlignment="Center" 
+                           TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="RefreshBrakfast"
+                     Grid.Column="0"
+                     Grid.Row="3" 
+                     Padding="0"
+                     IsVisible="false"
+                     VerticalOptions="EndAndExpand">
+            <Frame  BackgroundColor="#D7A7C7"
+                    CornerRadius="100"
+                    Margin="260,0,10,10" >
+                <Button BackgroundColor="#D7A7C7"
+                        ImageSource="refresh.png" 
+                        Clicked="RefreshButtonBreakfast" />
+            </Frame>
+        </StackLayout>
+            
+
+        <!--Lunch -->
+        <StackLayout x:Name="ChooseLunchOne" Grid.Column="0" Grid.Row="0" Padding="0" IsVisible="false" >
+            <Frame  BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,0,10" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="LunchChooseOne"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseLunchTwo" Grid.Column="0" Grid.Row="1" Padding="0" IsVisible="false" >
+            <Frame BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,0,0" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="LunchChooseTwo"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseLunchThree" Grid.Column="0" Grid.Row="2" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,0,0" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="LunchChooseThree" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseLunchFour" Grid.Column="0" Grid.Row="3" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,0,0"  VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Label x:Name="LunchChooseFour"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="RefreshLunch" Grid.Column="0" Grid.Row="4" Padding="0" IsVisible="false" VerticalOptions="EndAndExpand">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="100" Margin="260,0,10,10" >
+                <Button BackgroundColor="#897ED9" ImageSource="refresh.png" Clicked="RefrechButtonLunch" />
+            </Frame>
+        </StackLayout>
+
+        <!--Dinner -->
+        <StackLayout x:Name="ChooseDinnerOne" Grid.Column="0" Grid.Row="1" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#D7A7C7" CornerRadius="8" Margin="15,0,0,10" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="DinnerChooseOne"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseDinnerTwo" Grid.Column="0" Grid.Row="2" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#D7A7C7" CornerRadius="8" Margin="15,0,0,0"  VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Label x:Name="DinnerChooseTwo"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseDinnerThree" Grid.Column="0" Grid.Row="3" Padding="0" IsVisible="false">
+            <Frame BackgroundColor="#D7A7C7" CornerRadius="8" Margin="15,0,0,0" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="DinnerChooseThree"  FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="RefreshDinner" Grid.Column="0" Grid.Row="4" Padding="0" IsVisible="false" VerticalOptions="EndAndExpand">
+            <Frame  BackgroundColor="#D7A7C7" CornerRadius="100" Margin="260,0,10,10" >
+                <Button BackgroundColor="#D7A7C7" ImageSource="refresh.png" Clicked="RefreshButtonDinner" />
+            </Frame>
+        </StackLayout>
+
+        <!--Snacks -->
+        <StackLayout x:Name="ChooseSnacksOne" Grid.Column="0" Grid.Row="1" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,0,10" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="SnacksChooseOne" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="ChooseSnacksTwo" Grid.Column="0" Grid.Row="2" Padding="0" IsVisible="false">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="8" Margin="15,0,1,0" VerticalOptions="CenterAndExpand" >
+                <StackLayout>
+                    <Label x:Name="SnacksChooseTwo" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="#2D2167"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <StackLayout x:Name="RefreshSnacks" Grid.Column="0" Grid.Row="3" Padding="0" IsVisible="false" VerticalOptions="EndAndExpand">
+            <Frame  BackgroundColor="#897ED9" CornerRadius="100" Margin="260,0,10,10" >
+                <Button BackgroundColor="#897ED9" ImageSource="refresh.png" Clicked="RefreshButtonSnacks" />
+            </Frame>
+        </StackLayout>
+
+
+    </Grid>
+    
+
+    
+</ContentPage>
