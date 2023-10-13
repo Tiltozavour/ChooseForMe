@@ -8,3 +8,4 @@ My first experience using Xamarin.Forms.
 - Add a selection of favorite and frequently selected dishes.
 
 ## How to use..
+Just emulate the file into the android emulator
